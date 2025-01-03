@@ -26,7 +26,7 @@ pip install requests beautifulsoup4
 ## Usage
 
 1. **Prepare the `cookies.txt` file**:  
-   WordPress logged in cookies - grab the content of the cookie header as a single staring from chrome dev tools for a logged-in WordPress request for the site being scraped.
+   WordPress logged in cookies - grab the content of the cookie header as a single string from chrome dev tools for a logged-in WordPress request for the site being scraped.
    Place a file named `cookies.txt` in the same directory as the script. The file should contain a single line with the `Cookie` header value:
    ```
    cookie_name1=value1; cookie_name2=value2
