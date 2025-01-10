@@ -28,6 +28,7 @@ question_schema = QuestionSchema.model_json_schema()
 def generate_questions_from_content(content):
     """Generate multiple choice questions using OpenAI's ChatGPT API."""
     prompt = (
+        f"Using the following content. "
         f"Create three different multiple-choice questions based on the following content. "
         f"Each question should have unique options and cover distinct aspects of the content and this is for a technical audience, don't make the wrong answers too obvious.\n\n"
         f"{content}"
